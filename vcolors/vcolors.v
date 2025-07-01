@@ -11,8 +11,7 @@ pub const blue = '\x1b[34m'
 pub const cyan = '\x1b[36m'
 pub const white = '\x1b[37m'
 
-const colors = [red, green, yellow, blue, cyan, white]
-
 pub fn random_color(text string) string {
+	colors := ['red', 'blue', 'green', 'yellow', 'purple', 'orange']
 	return colors[rand.intn(colors.len) or { 0 }]
 }
