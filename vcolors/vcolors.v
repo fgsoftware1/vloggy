@@ -10,9 +10,10 @@ pub const yellow = '\x1b[33m'
 pub const blue = '\x1b[34m'
 pub const cyan = '\x1b[36m'
 pub const white = '\x1b[37m'
+pub const magenta = '\x1b[162m'
 
 pub fn random_color(text string) string {
-	color_codes := [red, blue, green, yellow, cyan, white]
+	color_codes := [red, blue, green, yellow, cyan, white, magenta]
 	random_color_code := color_codes[rand.intn(color_codes.len) or { 0 }]
 	return random_color_code + text + reset
 }
